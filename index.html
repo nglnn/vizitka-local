@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВебСтудия «Пиксель» — создание сайтов-визиток под ключ</title>
+    <link rel="canonical" href="http://vizitka.local/index.html">
+    <meta name="description"
+        content="Профессиональное создание сайтов-визиток для малого бизнеса. Адаптивный дизайн, настройка хостинга, быстрое выполнение заказов.">
+    <meta name="keywords" content="сайт-визитка, создание сайтов, веб-студия, заказать сайт">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #1a252f;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #2980b9, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #c0392b;
+        }
+
+        .services {
+            padding: 80px 0;
+            background-color: white;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #3498db;
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        footer {
+            background-color: #1a252f;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <a href="index.html" class="logo">Пиксель</a>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="about.html">О нас</a>
+                <a href="services.html">Услуги</a>
+                <a href="portfolio.html">Портфолио</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Создаем сайты, которые приносят клиентов</h1>
+            <p>Современный дизайн, быстрая загрузка и удобство для ваших пользователей.</p>
+            <a href="contacts.html" class="btn">Заказать сайт</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Почему выбирают нас</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Сайт-визитка</h3>
+                    <p>Идеальное решение для малого бизнеса и специалистов. Кратко о вас, ваших услугах и контактах.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Адаптивный дизайн</h3>
+                    <p>Ваш сайт будет отлично выглядеть как на большом мониторе, так и на экране смартфона.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Настройка и поддержка</h3>
+                    <p>Поможем с хостингом, доменом, базой данных и обеспечим техническую поддержку.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ВебСтудия «Пиксель». Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

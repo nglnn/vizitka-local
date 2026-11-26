@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /db.php
+Allow: /
+
+Sitemap: http://vizitka.local/sitemap.xml
